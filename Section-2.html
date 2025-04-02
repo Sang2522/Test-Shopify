@@ -1,0 +1,80 @@
+<section class="grid-layout">
+    <div class="grid-layout__item grid-layout__item--image">
+        <img src="https://images.pexels.com/photos/30030583/pexels-photo-30030583.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" alt="Lake view" class="grid-layout__image">
+    </div>
+    <div class="grid-layout__item grid-layout__item--text grid-layout__item--text-bottom">
+        <h2 class="grid-layout__title">Lorem ipsum</h2>
+        <p class="grid-layout__subtitle">Excepteur eiusmod consectetur</p>
+        <p class="grid-layout__paragraph">Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+        <p class="grid-layout__subtitle">Quis aliqua reprehenderit</p>
+        <p class="grid-layout__paragraph">Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+        <p class="grid-layout__subtitle">Ad sit cillum amet duis quis commodo</p>
+        <p class="grid-layout__paragraph">Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+    </div>
+    <div class="grid-layout__item grid-layout__item--text">
+        <h2 class="grid-layout__title">Mollit aliquip do ipsum consectetur</h2>
+        <p class="grid-layout__paragraph">Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure eu sit elit voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat.</p>
+        <p class="grid-layout__paragraph">Ipsum minim mollit irure dolor. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur duis incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad sit sunt labore duis.</p>
+    </div>
+    <div class="grid-layout__item grid-layout__item--image">
+        <img src="https://images.pexels.com/photos/30030583/pexels-photo-30030583.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" alt="Lanterns" class="grid-layout__image">
+    </div>
+</section>
+
+<style>
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .grid-layout__item--text {
+        background: #f5efe8;
+        padding: 20px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .grid-layout__item--text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .grid-layout__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .grid-layout__title {
+        font-size: 26px;
+        font-weight: Normal;
+        margin-bottom: 15px;
+    }
+
+    .grid-layout__subtitle {
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .grid-layout__paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .grid-layout {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
